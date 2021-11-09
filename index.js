@@ -12,16 +12,36 @@
 'use strict';
 
 function id() {
-    return "Replace This With Your Student ID";
-    // e.g. return "UP654321";
+    return "UP938769";
 }
 
 function fn() {
-    return "Replace This With Your First Name";
+    return "Ryan";
 }
 
 function sn() {
-    return "Replace This With Your Surname";
+    return "Harris";
 }
 
 // add your functions here
+
+/* Create a function replaceText which accepts two parameters: an element and a string. The function should set the content of the given element to the given string.
+ * 
+ * Need 2 parameters: elem, str (element, string)
+ * Content of elem = str
+ */
+function replaceText (elem, str){
+  elem.textContent = str;
+}
+
+/* Create a function addTextTo which gets two parameters: an element and a string. The function should append the given string to the content of the given element.
+ * 
+ * Need 2 parameters: elem, str
+ * Content of str = elem
+ */
+function addTextTo (elem, str){
+  let para = document.getElementById(elem);
+  let text = document.createTextNode(str);
+
+  para.appendChild(text);
+}
